@@ -1,9 +1,12 @@
 import json
 
-class PaperPass:
+__version__ = "0.1"
 
+class PaperPass:
+    """ This Class construct first pass of a paper"""
     # class var
     outline = {}
+    category = {}
 
     def __init__(self, outline):
         self.outline = outline
