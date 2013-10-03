@@ -3,7 +3,7 @@ import json
 __version__ = "0.1"
 
 class PaperPass:
-    """ This Class construct first pass of a paper"""
+    """ This Class constructs first pass of a paper """
     # class var
     outline = {}
     category = {}
