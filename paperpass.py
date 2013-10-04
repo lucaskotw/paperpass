@@ -25,7 +25,14 @@ class PaperPass:
 
     def outputjson(self, filename):
         fp = open(filename, 'w')
-        json.dump(self.outline, fp)
+        content = {'category'      : self.category,
+                   'context'       : self.context,
+                   'correctness'   : self.correctness,
+                   'contributions' : self.contributions,
+                   'clarity'       : self.clarity,
+        }
+                   
+        json.dump(content, fp)
 
 """"
 if __name__ == "__main__":
