@@ -1,5 +1,7 @@
 from Tkinter import Label
 
-def showLabel():
-    widget = Label(None, text='Hello!')
-    widget.pack()
+class displaywWindow:
+    " This class display the window of paperpass "
+    def showLabel():
+        widget = Label(None, text='Hello!')
+        widget.pack()
