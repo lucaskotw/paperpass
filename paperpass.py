@@ -5,8 +5,8 @@ __version__ = "0.1"
 class PaperPass:
     " This Class constructs first pass of a paper "
 
-    def __init__(self, outline):
-        self.outline = outline
+    def __init__(self, title):
+        self.title = title
 
     def setCategory(self, category):
         self.category = category
@@ -25,7 +25,8 @@ class PaperPass:
 
     def outputjson(self, filename):
         fp = open(filename, 'w')
-        content = {'category'      : self.category,
+        content = {'title'         : self.title,
+                   'category'      : self.category,
                    'context'       : self.context,
                    'correctness'   : self.correctness,
                    'contributions' : self.contributions,
