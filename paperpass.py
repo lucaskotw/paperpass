@@ -1,4 +1,5 @@
 import json
+from guipaperpass import displayWindow
 
 __version__ = "0.1"
 
@@ -34,6 +35,9 @@ class PaperPass:
         }
                    
         json.dump(content, fp)
+
+    def showWindow(self):
+        display = displayWindow.showLabel()
 
 """"
 if __name__ == "__main__":
