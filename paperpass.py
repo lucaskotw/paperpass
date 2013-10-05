@@ -37,7 +37,8 @@ class PaperPass:
         json.dump(content, fp)
 
     def showWindow(self):
-        display = displayWindow.showLabel()
+        display = displayWindow()
+        display.showLabel()
 
 """"
 if __name__ == "__main__":
